@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OMPinCodeView : UIView<UIKeyInput,UITextInputTraits>
+@interface OMPinCodeView : UIControl<UIKeyInput,UITextInputTraits>
 {
     BOOL _isSecure;
     NSString *_text;

@@ -42,4 +42,9 @@
     [super dealloc];
 }
 
+- (IBAction)pinCodeViewValueChanged:(id)sender
+{
+    NSLog(@"%@",self.pinCodeView.text);
+}
+
 @end

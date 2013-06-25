@@ -13,4 +13,6 @@
 
 @property (nonatomic, retain) IBOutlet OMPinCodeView *pinCodeView;
 
+- (IBAction)pinCodeViewValueChanged:(id)sender;
+
 @end

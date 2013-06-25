@@ -202,6 +202,8 @@
     self.text = [self.text stringByAppendingString:aText];
     
     [self updateSymbolViews];
+    
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark - UITextInputTraits
@@ -221,6 +223,8 @@
     OMPinCodeSymbolView *symbolView = [self.symbolViews objectAtIndex:clearedIndex];
     [symbolView clear];
     [symbolView setNeedsDisplay];
+    
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 @end
